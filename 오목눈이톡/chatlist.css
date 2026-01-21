@@ -52,8 +52,13 @@ body {
     align-items: center;
     font-weight: 600;
     border-bottom: 1px solid #eee;
-    font-family: "Yeon Sung", cursive;
 
+
+}
+.header-title {
+    font-family: "Yeon Sung", cursive;
+    font-size: 25px;
+    font-weight: 590;
 }
 
 /* 채팅 리스트 */
@@ -130,14 +135,16 @@ body {
 }
 
 .chat-name {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Yeon Sung", cursive;
 }
 
 .chat-preview {
     font-size: 12px;
     color: #999;
     margin-top: 4px;
+    font-family: "Yeon Sung", cursive;
 }
 
 .chat-time {
