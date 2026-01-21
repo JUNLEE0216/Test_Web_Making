@@ -1,0 +1,110 @@
+
+* {
+    box-sizing: border-box;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.room {
+    max-width: 420px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+/* 헤더 */
+.room-header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 12px;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+}
+
+.back {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+.avatar {
+    width: 44px;
+    height: 44px;
+    background-color: #8fd1ea;
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+/* 메시지 영역 */
+.messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: #fafafa;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.message.other {
+    justify-content: flex-start;
+}
+
+.message.me {
+    justify-content: flex-end;
+}
+
+/* 말풍선 */
+.bubble {
+    max-width: 70%;
+    padding: 10px 14px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.message.other .bubble {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+
+.message.me .bubble {
+    background-color: #cfa07a;
+    color: #ffffff;
+}
+
+/* 입력 */
+.input-area {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+.input-area input {
+    flex: 1;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.input-area button {
+    padding: 0 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #cfa07a;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
